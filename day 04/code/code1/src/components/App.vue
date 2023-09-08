@@ -2,16 +2,10 @@
   <div class="app-container">
       <h1>这是 <i>App.vue</i> 根组件</h1>
 
-    <hr>
-    <hr />
-    <h3>姓名 --- {{ username }}</h3>
     <hr />
     <p>count值是：{{ count }}</p>
     <button @click="addCount">+1</button>
-
-    <my-header title="信息科技中心" bgcolor="#000" color="#fff"></my-header>
-    <MyTest></MyTest>
-
+    <my-header title="信息科技中心" bgcolor="#004" color="#fff"></my-header>
   </div>
 </template>
 
