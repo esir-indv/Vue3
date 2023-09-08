@@ -16,8 +16,9 @@
         padding: 8px;
         width:  1000px;
         margin: 8px auto;
-
-
+      }
+      .card{
+          background-color: #8fd19e;
       }
     </style>
   </head>
@@ -36,7 +37,7 @@
                 <div class="input-group-text">品牌名称</div>
               </div>
               <!-- 文本输入框 -->
-              <input type="text" class="form-control" v-model.trim="brandname" @keyup.esc="brandname = ''" />
+              <input type="text" class="form-control" v-model.trim="brandname" @keyup.esc="brandname = ''" placeholder="esc：清空内容" />
             </div>
 
             <!-- 提交表单的按钮 -->
@@ -108,7 +109,7 @@
           nextId: 4,
           brandlist: [
             { id: 1, brandname: '宝马', state: true, addtime: new Date() },
-            { id: 2, brandname: '奥迪', state: false, addtime: new Date() },
+            { id: 2, brandname: '奥迪', state: true, addtime: new Date() },
             { id: 3, brandname: '奔驰', state: true, addtime: new Date() },
           ],
         },
@@ -129,7 +130,7 @@
             // 让 nextId 自增 +1
             this.nextId++
           },
-          // 根据 Id 删除对应的数据
+          // 根据 Id 删除对应的数据,filter会根据过滤条件返回一个新的数组
           removeBrand(id) {
             this.brandlist = this.brandlist.filter((x) => x.id !== id)
           },

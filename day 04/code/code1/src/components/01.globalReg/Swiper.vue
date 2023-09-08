@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'MySwiper',
+  name: 'MySwiper0908',
 }
 </script>

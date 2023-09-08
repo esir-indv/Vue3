@@ -6,17 +6,17 @@
 
 <script>
 export default {
-  name: 'MyHeader',
+  name: 'MyHeader-20230908',
   props: ['title', 'bgcolor', 'color']
 }
 </script>
 
 <style lang="less" scoped>
 .header-container {
-  height: 45px;
+  height: 65px;
   background-color: pink;
   text-align: center;
-  line-height: 45px;
+  line-height: 55px;
   position: fixed;
   top: 0;
   left: 0;

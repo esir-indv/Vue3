@@ -1,10 +1,10 @@
 <template>
   <h1>这是 <i>App.vue</i> 根组件</h1>
   <hr />
-  <!-- <h3>abc --- {{ username }}</h3>
+  <h3>abc --- {{ username }}</h3>
   <hr />
   <p>count值是：{{ count }}</p>
-  <button @click="addCount">+1</button> -->
+  <button @click="addCount">+1</button>
 
   <my-swiper></my-swiper>
   <MyTest></MyTest>
@@ -15,6 +15,8 @@
 
 <script>
 import Search from './components/02.privateReg/Search.vue'
+import MySwiper from "./components/01.globalReg/Swiper.vue";
+import MyTest from "./components/01.globalReg/Test.vue";
 
 export default {
   // 组件的名称
@@ -31,7 +33,9 @@ export default {
     },
   },
   components: {
-    'my-search': Search,
+      MyTest,
+      MySwiper,
+      'my-search': Search,
   },
 }
 </script>
