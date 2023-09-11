@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>count值是：{{number}}</p>
+    <p>MyCounter组件中count值是：{{number}}</p>
     <button @click="add">+1</button>
   </div>
 </template>

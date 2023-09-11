@@ -3,7 +3,7 @@
     <h1>App 根组件  ---- {{count}}</h1>
     <button @click="count += 1">+1</button>
     <hr />
-
+    <h2>my-counter 子组件</h2>
     <my-counter v-model:number="count"></my-counter>
   </div>
 </template>
