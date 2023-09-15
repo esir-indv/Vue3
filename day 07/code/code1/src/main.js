@@ -5,9 +5,9 @@ import { createApp } from 'vue'
 // import App from './components/03.dynamic/App.vue'
 // import App from './components/04.base-slot/App.vue'
 // import App from './components/05.named-slot/App.vue'
-// import App from './components/06.scoped-slot/App.vue'
+ import App from './components/06.scoped-slot/App.vue'
 //#endregion
-import App from './components/07.directive/App.vue'
+//import App from './components/07.directive/App.vue'
 
 import './assets/css/bootstrap.css'
 import './index.css'

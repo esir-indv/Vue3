@@ -13,10 +13,12 @@
     <hr />
 
     <my-table>
+        <!--结构为user，这里的user就是MyTable.vue里面for循环的 item -->
       <template #default="{ user }">
         <td>{{ user.id }}</td>
         <td>{{ user.name }}</td>
         <td>
+            <!--用户在根组件 自定义 子组件的渲染方式-->
           <input type="checkbox" :checked="user.state" />
         </td>
       </template>

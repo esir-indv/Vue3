@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <h1>App 根组件</h1>
 
     <hr />
@@ -64,4 +64,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+
+</style>

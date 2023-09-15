@@ -12,6 +12,7 @@
     <tbody>
       <!-- 循环渲染表格数据 -->
       <tr v-for="item in list" :key="item.id">
+          <!--for循环中 item 绑定这个插槽-->
         <slot :user="item"></slot>
       </tr>
     </tbody>
