@@ -13,7 +13,8 @@ body {
 }
 
 .active-router {
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: grey;
   font-weight: bold;
+  font-size: 18px;
 }

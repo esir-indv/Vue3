@@ -1,18 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-
 import Login from './components/MyLogin.vue'
 import Home from './components/MyHome.vue'
-
 import Users from './components/menus/MyUsers.vue'
 import Rights from './components/menus/MyRights.vue'
 import Goods from './components/menus/MyGoods.vue'
 import Orders from './components/menus/MyOrders.vue'
 import Settings from './components/menus/MySettings.vue'
 import UserDetail from './components/user/MyUserDetail.vue'
-
 // 创建路由实例对象
 const router = createRouter({
+  //history：指定路由模式为Hash
   history: createWebHashHistory(),
+  //routes数组：保存路由规则
   routes: [
     { path: '/', redirect: '/login' },
     { path: '/login', component: Login, name: 'login' },
@@ -32,7 +31,6 @@ const router = createRouter({
     },
   ],
 })
-
 // 全局路由导航守卫
 router.beforeEach((to, from, next) => {
   // 判断用户访问的是否为登录页
@@ -45,5 +43,4 @@ router.beforeEach((to, from, next) => {
     next()
   }
 })
-
 export default router

@@ -3,7 +3,7 @@
     <div class="login-box">
       <!-- 头像区域 -->
       <div class="text-center avatar-box">
-        <img src="../assets/logo.png" class="img-thumbnail avatar" alt="" />
+        <img src="../assets/scnxLogo.png" class="img-thumbnail avatar" alt="" />
       </div>
 
       <!-- 表单区域 -->
@@ -96,13 +96,13 @@ export default {
 .avatar-box {
   position: absolute;
   width: 100%;
-  top: -65px;
+  top: -20px;
   left: 0;
   .avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50% !important;
-    box-shadow: 0 0 6px #efefef;
+    //width: 800px;
+    //height: 60px;
+    border-radius: 20% !important;
+    //box-shadow: 0 0 6px #efefef;
   }
 }
 </style>
